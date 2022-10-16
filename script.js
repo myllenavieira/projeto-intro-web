@@ -258,8 +258,8 @@ if (filtered.length >= 1) {
         <p> <a href="https://www.tiscosteel.com/p1/5daceac8-d1ee-c878-d8da-e14c6d51c3ca.shtml">${filtered[0].material}</a><br>
         Número de Classificação: ${filtered[0].numeroClassificação}<br>
         Microestrutura: ${filtered[0].tipoDeMicroestrutura}<br>
-        Disponível: ${filtered[0].disponibilidade}<br>
-        Temperável: ${filtered[0].temperabilidade}<br>
+        Disponível: ${filtered[0].disponibilidade? "Sim": "Não"}<br>
+        Temperável: ${filtered[0].temperabilidade? "Sim": "Não"}<br>
         Características: ${filtered[0].caracteristicas}<br></p></section>`,
         tagInput.value = "",
         tagLi2.innerHTML = '',
