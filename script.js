@@ -230,16 +230,6 @@ const relatorio = dados.map((item) => {
 
 console.log(relatorio);
 
-function buscador (array, nome) {
-    let filtered = array.filter((item) => item.material === nome)
-    if (filtered.length >= 1) {
-        return filtered
-    } else {
-        return('Não encontrado')
-    }
-}
-// console.log(buscador(dados, prompt("Digite sua pesquisa: ")));
-
 let valores = 0;
 for (const material of dados) {
     valores += material.densidade;
